@@ -40,7 +40,10 @@ p{
     display: none;
 }
 
+body{
+    background-color: #f4f1f1;
 
+}
 
 
 
@@ -89,6 +92,9 @@ nav{
 .pages li a{
     color: #2C2B35;
 }
+.pages li a:hover{
+    color: #43A548;
+}
 
 .sign_in{
     color: #FFF;
@@ -128,12 +134,13 @@ nav{
     padding: 20px 0;
 }
 
+
 .text-part button{
     font-weight: 600;
     font-size: 16px;
 }
 .text-part button:hover{
-    background-color: #27f532;
+    background-image: linear-gradient(to right, #43A548, #52E259);
     a{
         color: #F7F8F8;
     }
@@ -206,10 +213,6 @@ nav{
     padding-top: 50px;
 }
 
-.cards{
-    background-color: #f4f1f1;
-}
-
 .main_idia{
     display: flex;
     align-items: center;
@@ -234,6 +237,11 @@ nav{
     font-weight: 500;
     margin-top: 30px;
 }
+.needs button:hover{
+    background-image: linear-gradient(to right, #43A548, #52E259);
+    color: #FFF;
+    border: none;
+}
 
 .present{
     background-color: #27f53122;
@@ -255,19 +263,70 @@ nav{
 .present button{
     padding: 15px 40px;
 }
+.present button:hover{
+    background-image: linear-gradient(to right, #43A548, #52E259);
+    color: #FFF;
+    border: #fff;
+}
 
+/* <!-- =================================================
+                    1C-PRODUCTS SECTION
+================================================= --> */
 
+.useful h1{
+    font-weight: 600;
+    font-size: 27px;
+    padding: 50px 0 40px 0;
+}
 
+.first_white_card{
+    width: 646px;
+    background-color: #FFF;
+    border-radius: 40px;
+    padding: 40px;
+    margin-left: -55px;
+}
 
+.h2{
+    text-align: center;
+    padding: 20px;
+    color: #3D4641;
+}
 
+.item{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+}
+.item p{
+    max-width: 500px;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 400;
+}
 
+.notes{
+    display: flex;
+    gap: 40px;
+}
 
+.disadvantages svg, .adventages svg {
+    width: 30px;
+    color: red;
+}
 
+.first_white_card{
+    background-color: #FFF;
+}
 
-
-
-
-
+/* Second part */
+.second_green_card{
+    width: 646px;
+    background-color: #E5F6E6;
+    border-radius: 40px;
+    padding: 40px;
+}
 
 
 
@@ -374,8 +433,33 @@ nav{
     .present button{
         width: 95%;
     }
-
-
+    .useful h1{
+        font-size: 28px;
+        padding-left: 20px;
+    }
+    .notes{
+        flex-direction: column;
+    }
+    .first_white_card, .second_green_card{
+        margin: 0;
+        max-width: 350px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .item p{
+        font-weight: 300;
+        font-size: 14px;
+        max-width: 250px;
+    }
+    .disadvantages svg, .adventages svg {
+        width: 30px;
+        color: red;
+    }
+    .second_green_card .adventages .item p{
+        max-width: 230px;
+        font-weight: 300;
+        color: #3D4641;
+    }
 
 }
 
