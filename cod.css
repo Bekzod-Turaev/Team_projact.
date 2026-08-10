@@ -29,6 +29,11 @@ button{
     border-radius: 20px;
     color: #F7F8F8;
 }
+.btn:hover{
+    background-image: linear-gradient(to right, #43A548, #52E259);
+}
+
+
 p{
     font-weight: 400;
     font-size: 20px;
@@ -42,7 +47,7 @@ p{
 
 body{
     background-color: #f4f1f1;
-
+    margin-bottom: 100px;
 }
 
 
@@ -276,7 +281,7 @@ nav{
 .useful h1{
     font-weight: 600;
     font-size: 27px;
-    padding: 50px 0 40px 0;
+    padding: 50px 0 40px 30px;
 }
 
 .first_white_card{
@@ -328,18 +333,108 @@ nav{
     padding: 40px;
 }
 
+/* <!-- =================================================
+                     PRODUCT_POPULATION SECTION
+================================================= --> */
 
+.population_text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 30px 60px;
+}
 
+.population_text button{
+    padding: 12px 30px;
+    background-color: #43A548;
+}
+.population_text button:hover{
+    background-image: linear-gradient(to right, #43A548, #52E259);
+    color: #FFF;
+    border: #fff;
 
+}
 
+.population_text h1{
+    font-size: 30px;
+}
 
+.product_population{
+    background-color: #EFFBF0;
+    padding: 50px 0 70px 0;
+}
 
+.towar_description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 
+}
 
+.descriptio_this_card{
+    background-color: #FFF;
+    border-radius: 30px;
+    padding: 40px;
+}
+.descriptio_this_card .towar_costs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
 
+.descriptio_this_card a{
+    color: #43A548;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
+.descriptio_this_card a svg{
+    width: 20px;
+    color: #43A548;
+}
 
+.towar_description svg{
+    width: 50px;
+    cursor: pointer;
 
+}
+
+.towar_costs h3{
+    font-size: 26px;
+    font-weight: 500;
+    padding: 15px 0;
+}
+
+.towar_costs button{
+    border: 1px solid #43A548;
+    border-radius: 40px;
+    padding: 5px 10px;
+    background-color: #FFF;
+    font-weight: 600;
+    font-size: 16px;
+    color: #43A548;
+}
+
+.descriptio_this_card ul li{
+    font-size: 14px;
+    font-weight: 400;
+    color: #838684;
+    line-height: 22px;
+}
+
+.descriptio_this_card a{
+    padding-top: 15px;
+    justify-content: end;
+}
+.descriptio_this_card a:hover{
+    color: #52E259;
+}
+.descriptio_this_card a svg:hover{
+    color: #52E259;
+}
 
 
 
