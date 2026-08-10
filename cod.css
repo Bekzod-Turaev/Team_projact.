@@ -40,6 +40,12 @@ p{
     color: #2C2B35;
     line-height: 25px;
 }
+.green_p{
+    color: #43A548;
+}
+.green_p:hover{
+    color: #327F36;
+}
 
 .menu{
     display: none;
@@ -228,7 +234,6 @@ nav{
     max-width: 680px;
     color: #6F7973;
     font-weight: 400;
-    font-style: 16px;
     padding: 25px 0;
 }
 
@@ -281,7 +286,7 @@ nav{
 .useful h1{
     font-weight: 600;
     font-size: 27px;
-    padding: 50px 0 40px 30px;
+    padding: 50px 0 40px 20px;
 }
 
 .first_white_card{
@@ -436,17 +441,73 @@ nav{
     color: #52E259;
 }
 
+.bown_part{
+    background-color: #FFF;
+    margin-top: 100px;
+    left: 100px;
+    border-radius: 40px;
+    padding: 40px;
+}
 
+.product_container{
+    display: flex;
+    justify-content: space-between;
+}
 
+.left_text_white_part{
+    width: 60%;
+}
+.right_text_green_part{
+    width: 40;
+}
 
+.left_text_white_part h2{
+    font-weight: 600;
+    font-size: 26px;
+    padding: 30px 0;
+}
+.left_text_white_part p{
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 650px;
+    padding: 0px 0 20px ;
+}
 
+.right_text_green_part{
+    background-color: #E5F6E6;
+    border-radius: 40px;
+    padding: 40px;
+    font-size: 18px;
+    font-weight: 400;
+}
 
+.right_text_green_part p{
+    max-width: 440px;    
+    padding-bottom: 10px; 
+    /* sxsmosm */
+}
 
+.calling_numbers p{
+    color: #6F7973;
+    font-size: 14px;
+    font-weight: 400;
+}
 
+.email p {
+    color: #6F7973;
+    font-size: 14px;
+    font-weight: 400;
+}
 
+.calling_numbers span{
+    font-weight: 600;
+    font-size: 20px;
+}
 
-
-
+.one_box{
+    display: flex;
+    gap: 20px;
+}
 
 
 
@@ -511,11 +572,18 @@ nav{
     .main_idia h2{
         font-size: 20px;
     }
-
+    .needs{
+        padding: 20px;
+        border-radius: 20px;
+    }
     .needs p{
         line-height: 17px;
         font-size: 12px;
+        padding: 5px 0;
     }
+    .needs button{
+        margin-top: 15px;
+    } 
 
     .present{
         flex-direction: column;
@@ -554,6 +622,15 @@ nav{
         max-width: 230px;
         font-weight: 300;
         color: #3D4641;
+    }
+    .product_population{
+        display: none;
+    }
+    .max_width1 p{
+        max-width: 294px;
+    }
+    .max_width2 p{
+        max-width: 290px;
     }
 
 }
