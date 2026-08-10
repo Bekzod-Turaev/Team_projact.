@@ -454,13 +454,6 @@ nav{
     justify-content: space-between;
 }
 
-.left_text_white_part{
-    width: 60%;
-}
-.right_text_green_part{
-    width: 40;
-}
-
 .left_text_white_part h2{
     font-weight: 600;
     font-size: 26px;
@@ -566,9 +559,8 @@ nav{
     .div1, .div2, .div3, .div4, .div5, .div6, .div7{
         grid-column: auto;
         grid-row: auto;
+        /* Gpt yordam berdi divlabilan */
     }
-    /* Gpt yordam berdi divlabilan */
-
     .main_idia h2{
         font-size: 20px;
     }
@@ -631,6 +623,42 @@ nav{
     }
     .max_width2 p{
         max-width: 290px;
+    }
+    .product_container{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .left_text_white_part h2{
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bown_part{
+        padding: 0;
+    }
+    .left_text_white_part p{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 250px;
+        font-size: 14px;
+    }
+    .right_text_green_part{
+        margin: 0 auto;
+        width: 350px;
+        padding: 20px;
+    }
+    .right_text_green_part p{
+        margin: 0 auto;
+        font-size: 14px;
+        text-align: center;
+        max-width: 250px;
+    }
+    .one_box{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
 }
