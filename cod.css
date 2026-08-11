@@ -122,7 +122,7 @@ nav{
     ================================================= --> */
 
 .hero{
-    background-image: linear-gradient(to bottom, #f3f0f0e8, #fff);
+    background-image: linear-gradient(to bottom, #F7F7F7, #fff);
     width: 100%;
     padding: 50px 0 0 0;
 }
@@ -134,6 +134,10 @@ nav{
 
 .hero_right_part, .hero_left_part{
     width: 50%;
+}
+
+.hero_right_part{
+    margin-left: 60px;
 }
 
 .text-part h1{
@@ -437,7 +441,7 @@ nav{
 .descriptio_this_card a:hover{
     color: #52E259;
 }
-.descriptio_this_card a svg:hover{
+.descriptio_this_card a:hover svg {
     color: #52E259;
 }
 
@@ -502,6 +506,88 @@ nav{
     gap: 20px;
 }
 
+/* <!-- =================================================
+                    BUYERS SECTION
+================================================= --> */
+
+.buyers, .sippliers{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.right_buyers_part, .left_buyers_part{
+    width: 50%;
+}
+
+.right_buyers_part{
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.right_buyers_part img{
+    padding-top: 80px;
+}
+
+/* left part */
+
+.recomendation_card{
+    background-color: #FFF;
+    border-radius: 40px;
+    padding: 40px;
+    margin-top: 15px;
+}
+
+.recomendation_card h2{
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.recomendation_text_part p, li, .same{
+    font-weight: 400;
+    font-size: 16px;
+    color: #6f7973;
+}
+
+.recomendation_text_part ul{
+    padding: 0 0 20px;
+    
+}
+.recomendation_text_part li{
+    line-height: 139%;
+}
+
+.same{
+    padding: 20px 0 10px 0 ;
+}
+
+ /* <!-- =================================================
+                    SIPPLIERS SECTION 
+================================================= --> */
+
+.sip_right, .sip_left{
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -533,7 +619,9 @@ nav{
     .towars h2{
         font-size: 18px;
     }
-
+    .hero_right_part{
+        margin-left: 10px;
+    }
     .con2{
         flex-direction: column;
         align-items: start;
@@ -660,6 +748,34 @@ nav{
         align-items: center;
         flex-direction: column;
     }
+    .buyers{
+        flex-direction: column;
+    }
+    .right_buyers_part, .left_buyers_part, .sip_right, .sip_left{
+        width: 100%;
+    }
+    .right_buyers_part h1{
+        font-size: 20px;
+    }
+    .client_images{
+        display: flex;
+        flex-direction: row;
+    }
+    .client_images img{
+        width: 160px;
+    }
+    .recomendation_card{
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10px;
+    }
+    .recomendation_card h2{
+        font-size: 17px;
+    }
+    .recomendation_text_part p, .recomendation_card p{
+        font-size: 13.4px;
+        line-height: 139%;
+    } 
 
 }
 
