@@ -754,7 +754,7 @@ nav{
     .right_buyers_part, .left_buyers_part, .sip_right, .sip_left{
         width: 100%;
     }
-    .right_buyers_part h1{
+    .right_buyers_part h1, .sip_right h1{
         font-size: 20px;
     }
     .client_images{
@@ -776,6 +776,16 @@ nav{
         font-size: 13.4px;
         line-height: 139%;
     } 
+    .sippliers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sip_right img{
+        margin-left: 50px;
+        width: 200px;
+    }
 
 }
 
