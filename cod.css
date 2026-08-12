@@ -56,6 +56,11 @@ body{
     margin-bottom: 100px;
 }
 
+input{
+    outline: none;
+    border: none;
+}
+
 
 
 
@@ -571,20 +576,135 @@ nav{
     width: 50%;
 }
 
+ /* <!-- =================================================
+                    GREEN INPUT SECTION 
+================================================= --> */
 
+.sign_up{
+    background-image: linear-gradient(to right, #43A548, #52E259);
+    color: #FFF;
+    display: flex;
+    margin: 100px auto; /* ВОТ ЭТО ГЛАВНОЕ */
+    max-width: 1400px;
+    border-radius: 40px;
+    padding: 60px;
+    height: 450px;
+}
 
+.sign_up_left_part, .sign_up_right_part{
+    width: 50%;
+}
 
+.sign_up_left_part h2{
+    font-size: 32px;
+    font-weight: 500;
+}
 
+.sign_up_left_part p{
+    padding-top: 20px;
+    color: #FFF;
+    font-size: 16px;
+    max-width: 400px;
+    font-weight: 400;
+}
 
+.input p{
+    color: #FFF;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px 0;
 
+}
+input{
+    width: 600px;
+    height: 40px;
+    color: #2C2B35;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
 
+.sign_in_text_part{
+    padding-top: 30px;
+    display: flex;
+    gap: 20px;
+}
 
+.sign_in_text_part span{
+    max-width: 450px;
+    font-weight: 400;
+    font-size: 15px;
+}
 
+.sign_in_text_part button{
+    padding: 12px 30px;
+    border-radius: 100px;
+    color: #FFF;
+    background-color: #2C2B35;
+    transition: 0.4s;
+}
+.sign_in_text_part button:hover{
+    background-color: #FFF;
+    color: #43A548;
+}
 
+/* <!-- =================================================
+                    ANSWERING TO QUESTIONS SECTION 
+================================================= --> */
 
+.question_ansvers{
+    padding: 30px;
+}
 
+.ansver_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 20px 40px;
+    border-radius: 40px;
+    margin-top: 20px;
+}
 
+.ansver_card svg{
+    cursor: pointer;
+    width: 24px;
+    
+}
+.ansver_card svg:hover{
+    color: #43A548;
+}
 
+.how_work_ansver_card{
+    background-image: radial-gradient(#52E259, #43A548);
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px 40px;
+}
+
+.how_work_ansver_card h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.how_work_ansver_card button{
+    background-color: #FFF;
+    color: #52E259;
+    border-radius: 40px;
+    padding: 12px 30px;
+    transition: 0.3s;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.how_work_ansver_card button:hover{
+    background-color: #2C2B35;
+    color: #FFF;
+}
 
 
 
@@ -785,6 +905,52 @@ nav{
     .sip_right img{
         margin-left: 50px;
         width: 200px;
+    }
+    .sign_up{
+        padding: 50px 0;
+        flex-direction: column;
+        padding: 20px;
+        width: 350px;
+        height: 600px;
+    }
+    .sign_up_left_part, .sign_up_right_part{
+        width: 100%;
+    }
+    .sign_up_left_part h2{
+        font-size: 24px;
+    }
+    .sign_up_left_part p{
+        font-size: 16px;
+    }
+    .input input{
+        width: 300px;
+    }
+    .sign_in_text_part{
+        flex-direction: column-reverse;
+    }
+    .sign_in_text_part span{
+        font-size: 12px;
+    }
+    .sign_in_text_part span .green_p{
+        color: #2C2B35  ;
+    }
+    .question_ansvers{
+        padding: 0 10px;
+    }
+    .question_ansvers h1{
+        font-size: 20px;
+    }
+    .ansver_card h2{
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .how_work_ansver_card{
+        flex-direction: column;
+    }
+    .how_work_ansver_card button{
+        margin-top: -15px;
+        width: 100%;
+        padding: 16px 30px;
     }
 
 }
