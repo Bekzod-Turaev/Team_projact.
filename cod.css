@@ -18,21 +18,23 @@ a{
     text-decoration: none;
     color: #F7F8F8;
 }
+
 button{
     cursor: pointer;
     border: none;
     outline: none;
 }
+
 .btn{
     background-color: #43A548;
     padding: 10px 25px;
     border-radius: 20px;
     color: #F7F8F8;
 }
+
 .btn:hover{
     background-image: linear-gradient(to right, #43A548, #52E259);
 }
-
 
 p{
     font-weight: 400;
@@ -53,7 +55,6 @@ p{
 
 body{
     background-color: #f4f1f1;
-    margin-bottom: 100px;
 }
 
 input{
@@ -787,13 +788,127 @@ input{
 }
 
 .logos_ourFrendsCompaniys{
-    display: flex;align-items: center;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
+/* <!-- =================================================
+                    FOOTER SECTION 
+================================================= --> */
 
+footer{
+    margin-top: 100px;
+    background-color: #2C2B35;
+    padding: 30px;
+    color: #FFF;
+}
 
+footer p{
+    color: #FFF;
+    /* display: inline; */
+}
 
+.all_footer_info, .right_footer_part{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.logo, .number_email_butten{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.calling_numbers h1, .email h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.calling_numbers h1:hover, .email h1:hover{
+    color: #43A548;
+}
+
+.number_email_butten{
+    padding-bottom: 30px;
+}
+
+.number_email_butten button{
+    background-color: #43A548;
+    padding: 12px 30px;
+    border-radius: 40px;
+    color: #FFF;
+}
+
+.number_email_butten button:hover{
+    background-image: linear-gradient(to left, #52E259, #43A548);
+}
+
+.octivation{
+    padding-bottom: 60px;
+}
+
+.octivation p{
+    font-weight: 200;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.octivation p a{
+    border-bottom: 1px solid #FFF;
+}
+
+.octivation p a:hover{
+    color: #43A548;
+    border-bottom: 1px solid #43A548;
+}
+
+.all_footer_info{
+    border-bottom: 1px solid #494949;
+}
+
+.information h3, .footer_products h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.information p, .footer_products p{
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.information p:hover, .footer_products p:hover{
+    color: #43A548;
+}
+
+.end_text{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.end_text p{
+    color: #919999;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.end_text p span{
+    color: #43A548;
+}
+
+.end_text p span:hover{
+    color: #FFF;
+}
 
 @media screen and (max-width: 900px){
     body{
@@ -1071,9 +1186,17 @@ input{
         gap: 30px;
         overflow-x: scroll;
     }
+    .all_footer_info, .right_footer_part{
+        gap: 10px;
+    }
     
+    .all_footer_info, .right_footer_part{
+        flex-direction: column;
+    }
 
-
+    .number_email_butten{
+        flex-direction: column;
+    }
 
 
 
