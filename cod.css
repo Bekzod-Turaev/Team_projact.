@@ -771,10 +771,25 @@ input{
     padding: 0 0 50px 50px;
 }
 
+/* <!-- =================================================
+                    LPGOTIPES SECTION 
+================================================= --> */
 
+.logotips {
+    padding: 30px;
 
+}
 
+.logotips h1{
+    font-size: 32px;
+    font-weight: 600;
+    padding: 50px 0;
+}
 
+.logos_ourFrendsCompaniys{
+    display: flex;align-items: center;
+    justify-content: space-between;
+}
 
 
 
@@ -1047,7 +1062,16 @@ input{
     .image_card img{
         width: 320px;
     }
-
+    .logotips h1{
+        font-size: 20px;
+        padding: 60px 0 30px ;
+    }
+    .logos_ourFrendsCompaniys{
+        display: flex;
+        gap: 30px;
+        overflow-x: scroll;
+    }
+    
 
 
 
