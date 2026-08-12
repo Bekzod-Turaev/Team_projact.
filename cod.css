@@ -653,7 +653,7 @@ input{
                     ANSWERING TO QUESTIONS SECTION 
 ================================================= --> */
 
-.question_ansvers{
+.question_ansvers, .knowlege{
     padding: 30px;
 }
 
@@ -706,6 +706,71 @@ input{
     color: #FFF;
 }
 
+/* <!-- =================================================
+                    KNOWLEGE_BASE SECTION 
+ ================================================= --> */
+
+.images svg{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.images svg:hover{
+    color: #327F36;
+}
+
+.knowlege h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: #3D4641;
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.image_card img{
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image_card{
+    width: 430px;
+    height: 300px;
+    background-color: #FFF;
+    border-radius: 20px;
+    position: relative;
+}
+
+.image_text_part{
+    padding: 30px;
+}
+
+.image_text_part span{
+    font-weight: 600;
+    font-size: 19px;
+}
+.image_text_part span:hover{
+    color: #43A548;
+}
+
+.image_text_part p{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.h1_texy_part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 50px 50px;
+}
+
 
 
 
@@ -716,7 +781,9 @@ input{
 
 
 @media screen and (max-width: 900px){
-
+    body{
+        overflow: hidden;
+    }
     .products{
         padding: 15px 20px ;
     }
@@ -952,6 +1019,43 @@ input{
         width: 100%;
         padding: 16px 30px;
     }
+     .images svg{
+        overflow: hidden;
+    }
+    /* U yerdagiday qila olmadim */
+    .images{
+        width: 100%;
+        overflow-x: scroll;
+    } 
+    .h1_texy_part h1{
+        font-size: 20px;
+        margin-left: -200px;
+    }
+    .h1_texy_part{
+        flex-direction: column;
+        padding: 20px 10px ;
+    }
+    .knowlege{
+        position: relative;
+    }
+    .h1_texy_part button{
+        position: absolute;
+        padding: 12px 30px;
+        width: 80%;
+        margin-top: 380px;
+    }
+    .image_card img{
+        width: 320px;
+    }
+
+
+
+
+
+
+
+
+
 
 }
 
