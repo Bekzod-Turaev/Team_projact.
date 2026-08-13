@@ -911,9 +911,6 @@ footer p{
 }
 
 @media screen and (max-width: 900px){
-    body{
-        overflow: hidden;
-    }
     .products{
         padding: 15px 20px ;
     }
@@ -1197,6 +1194,7 @@ footer p{
     .number_email_butten{
         flex-direction: column;
     }
+    
 
 
 
