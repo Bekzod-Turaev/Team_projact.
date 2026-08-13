@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1С-Товары — Заявка на демонстрацию</title>
+<link rel="stylesheet" href="../css/oставьте.css">
+</head>
+<body>
+ 
+<header class="header">
+  <div class="header__inner">
+    <a href="/" class="logo">
+      <span class="logo__icon">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 9h14l-1 8.4a1.8 1.8 0 0 1-1.8 1.6H7.8A1.8 1.8 0 0 1 6 17.4L5 9Z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M8.5 9V7.5a3.5 3.5 0 0 1 7 0V9" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M4 9h16" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="logo__text">1С-Товары</span>
+    </a>
+ 
+    <nav class="nav">
+      <a href="#" class="nav__link">Как это работает</a>
+      <a href="#" class="nav__link">Инструкции</a>
+      <a href="#" class="nav__link">Продукты</a>
+      <a href="#" class="nav__link">База знаний</a>
+      <a href="#" class="nav__link">О нас</a>
+    </nav>
+ 
+    <a href="#" class="btn btn--login">Вход</a>
+ 
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke="#1f2129" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+</header>
+ 
+<main class="demo-page">
+  <div class="demo-page__inner">
+    <p class="demo-page__hint">Нажмите на кнопку, чтобы открыть форму заявки на демонстрацию.</p>
+    <button class="btn btn--primary" id="openModalBtn">Оставить заявку</button>
+  </div>
+</main>
+ 
+<!-- ===== Modal ===== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-wrap">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" id="modalClose" aria-label="Закрыть">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 5l14 14M19 5L5 19" stroke="#4b4d57" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
+ 
+      <h2 class="modal__title" id="modalTitle">Оставьте заявку демонстрацию</h2>
+      <p class="modal__subtitle">Наши менеджеры свяжутся с Вами для консультации</p>
+ 
+      <form class="modal__form" id="demoForm">
+        <div class="modal__field">
+          <label for="nameInput" class="modal__label">Ваше имя</label>
+          <input type="text" id="nameInput" class="modal__input" placeholder="Введите Ваше имя">
+        </div>
+ 
+        <div class="modal__field">
+          <label for="phoneInput" class="modal__label">Ваш телефон</label>
+          <input type="tel" id="phoneInput" class="modal__input" placeholder="Введите Ваш телефон">
+        </div>
+ 
+        <div class="modal__footer">
+          <p class="modal__consent">
+            Нажимая кнопку вы даете согласие на обработку персональных данных в соответствии с
+            <a href="#" class="modal__consent-link">политикой конфиденциальности</a>
+          </p>
+          <button type="submit" class="btn btn--primary modal__submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+ 
+    <div class="modal__art" aria-hidden="true">
+      <svg viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg">
+        <!-- shadow -->
+        <ellipse cx="120" cy="264" rx="70" ry="10" fill="#1a1c24" opacity="0.06"/>
+ 
+        <!-- clipboard behind -->
+        <g transform="rotate(-8 150 150)">
+          <rect x="86" y="60" width="128" height="176" rx="14" fill="#2E8B33"/>
+          <rect x="100" y="78" width="100" height="142" rx="8" fill="#ffffff"/>
+          <rect x="130" y="52" width="40" height="16" rx="8" fill="#1f6e24"/>
+          <rect x="114" y="96" width="72" height="7" rx="3.5" fill="#e3e6ea"/>
+          <rect x="114" y="112" width="56" height="7" rx="3.5" fill="#e3e6ea"/>
+          <circle cx="114" cy="140" r="8" fill="#dff2df"/>
+          <path d="M110 140l3 3 6-6" stroke="#2E8B33" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <rect x="130" y="136" width="56" height="7" rx="3.5" fill="#e3e6ea"/>
+          <circle cx="114" cy="164" r="8" fill="#dff2df"/>
+          <path d="M110 164l3 3 6-6" stroke="#2E8B33" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <rect x="130" y="160" width="44" height="7" rx="3.5" fill="#e3e6ea"/>
+        </g>
+ 
+        <!-- green check badge, bottom-left of clipboard -->
+        <g transform="translate(64 190)">
+          <circle cx="24" cy="24" r="26" fill="#ffffff"/>
+          <circle cx="24" cy="24" r="20" fill="#4CAF50"/>
+          <path d="M14 24l7 7 13-14" stroke="#ffffff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </g>
+ 
+        <!-- plant -->
+        <g transform="translate(150 18)">
+          <path d="M14 40c0-18-14-24-14-24s-2 18 14 24Z" fill="#63C24A"/>
+          <path d="M14 40c0-22 17-28 17-28s3 20-17 28Z" fill="#4CAF50"/>
+        </g>
+ 
+        <!-- person -->
+        <g transform="translate(24 60)">
+          <!-- body -->
+          <path d="M18 220c-3-58 4-104 22-118 9-7 17-9 20-9s11 2 20 9c18 14 25 60 22 118Z" fill="#232430"/>
+          <!-- tablet -->
+          <rect x="26" y="128" width="66" height="78" rx="8" fill="#ffffff" stroke="#e3e6ea" stroke-width="1.5"/>
+          <rect x="36" y="140" width="30" height="6" rx="3" fill="#4CAF50"/>
+          <rect x="36" y="154" width="46" height="5" rx="2.5" fill="#e3e6ea"/>
+          <rect x="36" y="166" width="46" height="5" rx="2.5" fill="#e3e6ea"/>
+          <rect x="36" y="178" width="30" height="5" rx="2.5" fill="#e3e6ea"/>
+          <!-- head -->
+          <circle cx="60" cy="34" r="28" fill="#f2b98a"/>
+          <path d="M32 30c0-18 13-30 28-30s28 12 28 30c0-5-5-8-9-8-4 7-11 10-19 10s-15-3-19-10c-4 0-9 3-9 8Z" fill="#33261c"/>
+          <!-- arm holding tablet -->
+          <path d="M40 118c-6 6-10 14-10 22" stroke="#f2b98a" stroke-width="10" stroke-linecap="round" fill="none"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+ 
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const header = document.querySelector('.header');
+  menuToggle.addEventListener('click', () => {
+    const isOpen = header.classList.toggle('nav-open');
+    menuToggle.setAttribute('aria-expanded', isOpen);
+  });
+ 
+  const openModalBtn = document.getElementById('openModalBtn');
+  const modalOverlay = document.getElementById('modalOverlay');
+  const modalClose = document.getElementById('modalClose');
+ 
+  function openModal() {
+    modalOverlay.classList.add('modal-overlay--open');
+    document.body.style.overflow = 'hidden';
+  }
+ 
+  function closeModal() {
+    modalOverlay.classList.remove('modal-overlay--open');
+    document.body.style.overflow = '';
+  }
+ 
+  openModalBtn.addEventListener('click', openModal);
+  modalClose.addEventListener('click', closeModal);
+  modalOverlay.addEventListener('click', (e) => {
+    if (e.target === modalOverlay) closeModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+ 
+  document.getElementById('demoForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    closeModal();
+  });
+</script>
+ 
+</body>
+</html>
+ 
