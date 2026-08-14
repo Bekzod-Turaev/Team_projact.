@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS FOLDERS/cod.css">
+    <link rel="stylesheet" href=".//css/cod.css">
     <link rel="icon" type="image/x=icon" href="./svgs/gitHub.svg">
     <title>My project</title>
 </head>
@@ -580,7 +580,7 @@
             </svg>
             <!-- 1 -->
             <div class="image_card">
-                <img src="./images/spiral.png" alt="">
+                <img src="./assets/images/spiral.png" alt="">
                 <div class="image_text_part">
                     <span>Методы и формулы расчета торговой наценки</span>
                     <p class="green_p">Читать статью</p>
@@ -588,7 +588,7 @@
             </div>
             <!-- 2 -->
             <div class="image_card">
-                <img src="./images/ocean.png" alt="">
+                <img src="./assets/images/ocean.png" alt="">
                 <div class="image_text_part">
                     <span>Ассортимент продуктового ассортимента</span>
                     <p class="green_p">Читать статью</p>
@@ -596,7 +596,7 @@
             </div>
             <!-- 3 -->
             <div class="image_card">
-                <img src="./images/comics.png" alt="">
+                <img src="./assets/images/comics.png" alt="">
                 <div class="image_text_part">
                     <span>Что такое сезонность продаж</span>
                     <p class="green_p">Читать статью</p>
@@ -623,12 +623,12 @@
                     container.scrollLeft = (container.scrollWidth - container.clientWidth) / 2;
                 });
             </script>
-            <img src="./images/firs sulivan logo.png" alt="">
-            <img src="./images/second redbul logo.png" alt="">
-            <img src="./images/fivth dallar logo.png" alt="">
-            <img src="./images/third makito logo.png" alt="">
-            <img src="./images/forth proneer logo.png" alt="">
-            <img src="./images/six discord logo.png" alt="">
+            <img src="./assets/images/firs sulivan logo.png" alt="">
+            <img src="./assets/images/second redbul logo.png" alt="">
+            <img src="./assets/images/fivth dallar logo.png" alt="">
+            <img src="./assets/images/third makito logo.png" alt="">
+            <img src="./assets/images/forth proneer logo.png" alt="">
+            <img src="./assets/images/six discord logo.png" alt="">
         </div>
     </section>
 
@@ -636,53 +636,62 @@
                     FOOTER SECTION 
     ================================================= -->
 
-    <footer class="footer ">
-        <div class="container">
-            <div class="all_footer_info">
-                <div class="left_footer_part">
-                    <div class="logo">
-                        <img src="./assets/svgs/image 1.svg">
-                        <h2>1С-Товары</h2>
-                    </div>
-                    <div class="number_email_butten">
-                        <div class="calling_numbers">
-                            <p>Линия консультации</p>
-                            <h1>+7(495)-111-00-10</h1>
-                        </div>
-                        <div class="email">
-                            <p>Наш e-mail</p>
-                            <h1>info@rozn.info</h1>
-                        </div>
-                        <button>Заказать звонок</button>
-                    </div>
-                    <div class="octivation">
-                        <p>Для активации перейдите на <a href="#">portal.1c.ru </a>или обратитесь к Вашему партнеру 1С.</p>
-                        <p>Инструкция по установке сервиса</p>
-                    </div>
-                </div>
-                <div class="right_footer_part">
-                    <div class="information">
-                        <h3>Информация</h3>
-                        <p>Как это работает</p>
-                        <p>Инструкции</p>
-                        <p>Блог</p>
-                        <p>О нас</p>
-                    </div>
-                    <div class="footer_products">
-                        <h3>Продукты</h3>
-                        <p>1С-Ритейл Чекер Демо</p>
-                        <p>1С-Товары.Тестовый для магазина на 1 месяц</p>
-                        <p>1С-Ритейл Чекер</p>
-                        <p>1С-Товары 300</p>
-                        <p>1С-Товары 30000</p>
-                    </div>
-                </div>
-            </div>
-            <div class="end_text">
-                <p>1С-Товары © 2023</p>
-                <p>Сайт создан - <span> wtstudio.ru</span> </p>
-            </div>
+    <footer class="footer">
+  <div class="footer__inner">
+ 
+    <div class="footer__col footer__col--brand">
+      <a href="/" class="logo">
+        <img src="../assets/svgs/image 1.svg" alt="">
+        <span class="logo__text logo__text--light">1С-Товары</span>
+      </a>
+ 
+      <div class="footer__contacts">
+        <div class="footer__contact footer__contact--phone">
+          <span class="footer__label">Линия консультации</span>
+          <span class="footer__value">+7(495)-111-00-10</span>
         </div>
+        <div class="footer__contact footer__contact--email">
+          <span class="footer__label">Наш e-mail</span>
+          <span class="footer__value">info@rozn.info</span>
+        </div>
+        <a href="#" class="btn btn--primary btn--call">Заказать звонок</a>
+      </div>
+ 
+      <p class="footer__note">
+        Для активации перейдите на <a href="#" class="footer__link-underline">portal.1c.ru</a> или обратитесь к Вашему партнеру 1С.
+      </p>
+      <a href="#" class="footer__link-green">Инструкция по установке сервиса</a>
+    </div>
+ 
+    <div class="footer__col">
+      <h3 class="footer__heading">Информация</h3>
+      <ul class="footer__list">
+        <li><a href="#">Как это работает</a></li>
+        <li><a href="#">Инструкции</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">О нас</a></li>
+      </ul>
+    </div>
+ 
+    <div class="footer__col">
+      <h3 class="footer__heading">Продукты</h3>
+      <ul class="footer__list">
+        <li><a href="#">1С-Ритейл Чекер Демо</a></li>
+        <li><a href="#">1С-Товары.Тестовый для магазина на 1 месяц</a></li>
+        <li><a href="#">1С-Ритейл Чекер</a></li>
+        <li><a href="#">1С-Товары 300</a></li>
+        <li><a href="#">1С-Товары 30000</a></li>
+      </ul>
+    </div>
+ 
+  </div>
+ 
+  <div class="footer__divider"></div>
+ 
+  <div class="footer__bottom">
+    <span>1С-Товары © 2023</span>
+    <span>Сайт создан — <a href="#">wstudio.ru</a></span>
+  </div>
     </footer>
 
 </body>
