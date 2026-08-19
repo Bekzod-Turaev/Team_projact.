@@ -307,7 +307,7 @@ nav{
 .useful h1{
     font-weight: 600;
     font-size: 27px;
-    padding: 50px 0 40px 20px;
+    padding: 150px 0 40px 60px;
 }
 
 .first_white_card{
@@ -316,6 +316,10 @@ nav{
     border-radius: 40px;
     padding: 40px;
     margin-left: -55px;
+}
+
+.products .notes{
+    justify-content: center;
 }
 
 .h2{
@@ -349,6 +353,10 @@ nav{
 
 .first_white_card{
     background-color: #FFF;
+}
+
+.product2{
+    justify-content: center;
 }
 
 /* Second part */
@@ -921,7 +929,11 @@ input{
   color: var(--green);
   font-weight: 600;
 }
+
 @media screen and (max-width: 900px){
+    body{
+        overflow-x: hidden;
+    }
     .products{
         padding: 15px 20px ;
     }
@@ -1181,7 +1193,13 @@ input{
         padding: 12px 30px;
         width: 80%;
         margin-top: 380px;
-    }.footer {
+    }
+    
+    .image_card img{
+        width: 320px;
+    }
+
+    .footer {
     padding-top: 40px;
   }
  
@@ -1195,9 +1213,9 @@ input{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "logo    contact"
-      "note    email"
-      "link    button";
+    "logo    contact"
+    "note    email"
+    "link    button";
     column-gap: 16px;
     row-gap: 20px;
     align-items: start;
